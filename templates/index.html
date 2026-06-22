@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest Fire Prediction</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background:linear-gradient(135deg,#0f172a,#1e293b);
+        }
+
+        .container{
+            text-align:center;
+            background:white;
+            padding:40px;
+            border-radius:15px;
+            box-shadow:0 10px 30px rgba(0,0,0,0.2);
+            max-width:500px;
+            width:90%;
+        }
+
+        h1{
+            color:#1e293b;
+            margin-bottom:15px;
+        }
+
+        p{
+            color:#64748b;
+            margin-bottom:25px;
+        }
+
+        button{
+            background:#2563eb;
+            color:white;
+            border:none;
+            padding:12px 24px;
+            border-radius:8px;
+            font-size:16px;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        button:hover{
+            background:#1d4ed8;
+            transform:translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>🔥 Forest Fire Prediction System</h1>
+
+        <p>
+            Predict the Fire Weather Index using Machine Learning.
+        </p>
+
+        <form action="/predictdata" method="GET">
+            <button type="submit">
+                Start Prediction
+            </button>
+        </form>
+    </div>
+
+</body>
+</html>
